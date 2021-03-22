@@ -17,7 +17,7 @@ Template format:
 
 Render to HTML with JavaScript
 ```js
-render(tempalteTextBlob, {
+render(templateTextBlob, {
     "email": "john@doe.com",
     "firstName": "John",
     "lastName": "Doe",
