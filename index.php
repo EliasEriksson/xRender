@@ -35,7 +35,7 @@ include "functions/render.php";
 include "templates/footer.php";
 ?>
 <script>let rootURL = "<?= $rootURL ?>"</script>
-<script src="<?= $rootURL ?>/static/js/templateReader.js"></script>
+<script src="<?= $rootURL ?>/static/js/xRender.js"></script>
 <script src="<?= $rootURL ?>/static/js/feeder.js"></script>
 <script src="<?= $rootURL ?>/static/js/main.js"></script>
 </body>

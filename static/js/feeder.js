@@ -12,7 +12,6 @@ class Feeder {
         let [context, templateURL] = response;
         let template = await (await fetch(templateURL)).text();
 
-
-        this.targets.forEach(target => target.innerHTML += render(template, context))
+        this.targets.appendChild(render(template, context));
     }
 }

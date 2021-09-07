@@ -9,7 +9,7 @@
  *
  * @param template a HTML file with {{ variables }}
  * @param context originally a JSON object. Must have keys matching each {{ variable }} in the template
- * @returns string|null
+ * @returns ChildNode
  */
 function render(template, context) {
     for (let variable in context) {
@@ -18,5 +18,7 @@ function render(template, context) {
     if (template.match(/{{\s*[^}]\s*}}/)) {
         return null;
     }
-    return template;
+    let divElement = document.createElement("div");
+    divElement.innerHTML = template;
+    return divElement.firstChild;
 }
